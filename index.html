@@ -1,20 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>UPI Payment</title>
+  <meta charset="UTF-8">
+  <title>UroPay Test</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body style="background:#0b1020;color:white;font-family:Arial;text-align:center">
+<body style="font-family:Arial;text-align:center;margin-top:80px;">
 
-<h2>Pay ₹199</h2>
-<p>Tap & Hold the QR to open UPI scanner</p>
+  <h2>UroPay Payment Test</h2>
+  <p>Amount: ₹200</p>
 
-<img
-  src="https://api.qrserver.com/v1/create-qr-code/?size=280x280&data=upi://pay?pa=6301312358@ptyes&pn=Payment&am=199&cu=INR"
-  style="border-radius:16px;box-shadow:0 0 20px rgba(0,255,200,0.4)"
-  alt="UPI QR">
+  <!-- UroPay Button -->
+  <a href="#"
+     class="uropay-btn"
+     data-uropay-api-key="6LSU2954VEUS3PVKVKUCGDN9IUX8632G"
+     data-uropay-button-id="ROMEO533173"
+     data-uropay-environment="LIVE"
+     data-uropay-amount="200">
+     Buy Now for ₹200
+  </a>
 
-<p style="opacity:0.7">Works with GPay, PhonePe, Paytm, BHIM</p>
+  <!-- UroPay Script -->
+  <script src="https://cdn.uropay.me/uropay-embed.min.js"></script>
 
 </body>
 </html>
