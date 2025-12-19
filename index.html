@@ -4,13 +4,14 @@
   <title>UPI Payment</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body style="display:flex;justify-content:center;align-items:center;height:100vh;font-family:Arial">
+<body style="text-align:center;font-family:Arial">
 
-  <a href="upi://pay?pa=6301312358@ptyes&pn=Payment&am=199&cu=INR&tn=Website%20Payment">
-    <button style="padding:18px 40px;font-size:20px;border:none;border-radius:8px;background:#00c853;color:white;">
-      Pay ₹199 via UPI
-    </button>
-  </a>
+<h2>Scan & Pay ₹199</h2>
+
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=upi://pay?pa=6301312358@ptyes&pn=Payment&am=199&cu=INR"
+     alt="UPI QR Code">
+
+<p>Use any UPI App</p>
 
 </body>
 </html>
